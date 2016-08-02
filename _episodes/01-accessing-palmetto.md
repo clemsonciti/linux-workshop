@@ -6,10 +6,6 @@ questions:
 - "How can I access the Palmetto cluster from my local machine?"
 ---
 
-> ## Learning objectives {.objectives}
-> * Learn how to log in to the Palmetto cluster.
-> * Learn the basic structure of the Palmetto cluster.
-
 In this workshop,
 we will use a command-line interface to interact with
 the Palmetto cluster, which runs the Linux operating system
@@ -21,14 +17,11 @@ including Mac OS X.
 To be able to run commands on the Palmetto from your own machine,
 you will first need to be able to log in to the Palmetto.
 This is known as a *remote login*.
-If you run Mac OS X or any other Unix-based operating
-system on your machine,
-you can log in remotely by opening a terminal
-and using the `ssh` command:
 
-~~~{.bash}
+~~~
 $ ssh username@user.palmetto.clemson.edu
 ~~~
+{: .bash}
 
 If you run Windows,
 you will use the SSH Secure Shell to log in.
@@ -44,9 +37,10 @@ When logged in,
 you are presented with a welcome message
 and the following "prompt":
 
-~~~{.bash}
+~~~
 [username@user001 ~]$ 
 ~~~
+{: .bash}
 
 The prompt in a bash shell usually
 consists of a dollar (`$`) sign,
@@ -60,71 +54,14 @@ i.e., `~`, which, as you will learn shortly,
 is short for your *home* directory.
 We will mostly refer to the prompt as just `$`, i.e.,
 
-~~~{.bash}
+~~~
 $ 
 ~~~
-
-The first few commands that you will enter into the shell
-will be to download a `.zip` file and unzip it.
-These commands are rather cryptic,
-So don't worry if you don't understand them.
-
-To download the `.zip` file:
-
-~~~{.bash}
-wget http://clemsonciti.github.io/linux-workshop/data/shell-novice-data.zip
-~~~
-
-~~~{.output}
---2016-03-29 10:12:13--  http://clemsoncoe.github.io/linux-workshop/data-hpc.zip
-Resolving clemsoncoe.github.io... 23.235.46.133
-Connecting to clemsoncoe.github.io|23.235.46.133|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 168007 (164K) [application/zip]
-Saving to: “data-hpc.zip”
-
-100%[====================================================================================================================>] 168,007     --.-K/s   in 0.09s
-
-2016-03-29 10:12:13 (1.76 MB/s) - “data-hpc.zip” saved [168007/168007]
-~~~
-
-Unzip it:
-
-~~~{.bash}
-unzip swc-data-hpc.zip
-~~~
-
-~~~{.output}
-Archive:  swc-data-hpc.zip
-   creating: data-hpc/
-  inflating: data-hpc/.bash_profile
-   creating: data-hpc/creatures/
-  inflating: data-hpc/creatures/basilisk.dat
-  inflating: data-hpc/creatures/unicorn.dat
-   creating: data-hpc/data/
-  inflating: data-hpc/data/amino-acids.txt
-  inflating: data-hpc/data/animals.txt
-  .
-  .
-  .
-~~~
-
-Finally, type in the following command; if you see the output below,
-then the file was downloaded and unzipped successfully:
-
-~~~{.bash}
-data-hpc/
-~~~
-
-~~~{.output}
--bash: data-hpc/: is a directory
-~~~
+{: .bash}
 
 ## Basic structure of the cluster
 
-<img src="fig/palmetto-structure.png" \
-     alt="Structure of the Palmetto Cluster" \
-     style="height:350px">
+<img src="../fig/palmetto-structure.png" alt="Structure of the Palmetto Cluster" style="height:350px">
 
 The Palmetto cluster has several "compute" nodes
 that can perform fast calculations on large amounts of data.
