@@ -9,7 +9,7 @@ questions:
 In this workshop,
 we will use a command-line interface to interact with
 the Palmetto cluster, which runs the Linux operating system
-specifically, [Scientific Linux](https://www.scientificlinux.org/).
+specifically, [CentOS](https://www.centos.org/).
 However, note that these commands can be used on
 any *Unix-based* operating system,
 including Mac OS X.
@@ -19,7 +19,7 @@ you will first need to be able to log in to the Palmetto.
 This is known as a *remote login*.
 
 ~~~
-$ ssh username@user.palmetto.clemson.edu
+$ ssh username@login.palmetto.clemson.edu
 ~~~
 {: .bash}
 
@@ -28,7 +28,7 @@ you will use the SSH Secure Shell to log in.
 Click on  `File > Quick Connect`,
 and use the following parameters (whichever required):
 
-* Host name: `user.palmetto.clemson.edu`
+* Host name: `login.palmetto.clemson.edu`
 * User name: Clemson username
 * Port number: 22
 * Authentication method: none specified
@@ -38,7 +38,7 @@ you are presented with a welcome message
 and the following "prompt":
 
 ~~~
-[username@user001 ~]$ 
+[username@user001 ~]$
 ~~~
 {: .bash}
 
@@ -55,7 +55,7 @@ is short for your *home* directory.
 We will mostly refer to the prompt as just `$`, i.e.,
 
 ~~~
-$ 
+$
 ~~~
 {: .bash}
 
